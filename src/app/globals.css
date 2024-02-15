@@ -20,3 +20,7 @@ body {
   max-width: 1200px;
   margin: auto;
 }
+
+input {
+  color: var(--color-background);
+}
