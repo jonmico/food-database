@@ -14,7 +14,7 @@ export default function NewFoodPage() {
     const carbs = formData.get('carbs') as string;
     const protein = formData.get('protein') as string;
 
-    await db.food.create({
+    const food = await db.food.create({
       data: {
         brand,
         name,
@@ -26,7 +26,7 @@ export default function NewFoodPage() {
       },
     });
 
-    redirect('/');
+    redirect(`/foods/${food.id}`);
   }
 
   return (
