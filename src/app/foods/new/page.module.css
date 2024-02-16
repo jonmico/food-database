@@ -1,15 +1,29 @@
 .createFoodForm {
+  max-width: 700px;
   display: flex;
+  margin: auto;
   flex-direction: column;
   gap: 1rem;
+  border: 1px solid var(--color-secondary);
+  padding: 1.5rem 2.5rem;
+  border-radius: 5px;
 }
 
 .formField {
-  width: 50%;
   margin: auto;
+  width: 100%;
   display: flex;
   align-items: center;
   justify-content: space-between;
+}
+
+.formLabel {
+  width: 7rem;
+  flex-shrink: 0;
+}
+
+.formInput {
+  width: 100%;
 }
 
 .submitButton {

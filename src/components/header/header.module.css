@@ -1,0 +1,29 @@
+.navWrapper {
+  padding: 0.5rem 0;
+  background-color: var(--color-secondary);
+}
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 60%;
+  margin: auto;
+}
+
+.homeLink {
+  font-weight: 700;
+  font-size: 1.5rem;
+}
+
+.linkContainer {
+  display: flex;
+  gap: 1rem;
+}
+
+@media only screen and (max-width: 768px) {
+  .nav {
+    width: 100%;
+    min-width: none;
+  }
+}
